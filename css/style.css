@@ -482,6 +482,7 @@ body.section-show .transition-mask:before{
 }
 .front-person-img > img{
 	max-width:100%;
+	margin-top: '20%';
 	vertical-align:bottom;
 	-webkit-transform:rotate(-45deg) translateY(40px);
 	-moz-transform:rotate(-45deg) translateY(40px);
@@ -1775,7 +1776,10 @@ body .symp-btn{
 	line-height:2em;
 	text-align:justify;
 }
-
+.image-one {
+	width: fit-content;
+	height: auto;
+}
 
 
 
@@ -1902,15 +1906,18 @@ body .symp-btn{
 		padding-top:65%;
 		height:0;
 		margin-top:120px;
+		
 	}
+	
 	.front-person-img > img{
-		-webkit-transform:rotate(-45deg) translateY(45px);
+		/* -webkit-transform:rotate(-30deg) translateY(45px);
 		-moz-transform:rotate(-45deg) translateY(45px);
 		-ms-transform:rotate(-45deg) translateY(45px);
 		-o-transform:rotate(-45deg) translateY(45px);
-		transform:rotate(-45deg) translateY(100px);
+		transform:rotate(-45deg) translateY(100px); */
 		position:absolute;
-		bottom:0;
-		left:-40px;
+		top: 0;
+		left:-15;
+		margin-top: -40
 	}
 }

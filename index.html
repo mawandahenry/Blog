@@ -212,10 +212,7 @@
 									
 								</ul>
 								
-								<a href='#' class='symp-btn' >Hire Me For Work</a>
-								
-								<a href='#' class='symp-btn link-btn' ><i class='ion-ios-download' ></i>Download Resume</a>
-								
+								<a href='cv_current.pdf' class='symp-btn' >Download CV</a>								
 							</div>
 						
 							
@@ -681,7 +678,7 @@
 								
 								<div class='hobby' >
 									
-									<div class='icon' >
+									<div cresumecvportfolio@gmail.comlass='icon' >
 										<i class='ion-ios-musical-notes' ></i>
 									</div>
 									
@@ -743,9 +740,7 @@
 						
 						
 						<div class='row' >
-							
-							<div class='col-md-6' >
-								
+							resumecvportfolio@gmail.com
 								<div class='skill' >
 									
 									<h4>HTML/CSS</h4>
@@ -764,7 +759,7 @@
 									
 									<div class='skill-bar' data-percent='50' >
 										<div class='bar' >
-											<div class='percent' >50%</div>
+											resumecvportfolio@gmail.com	<div class='percent' >50%</div>
 										</div>
 									</div>
 									
@@ -1657,8 +1652,16 @@
 						
 						<div class='row' >
 							<div class='col-md-8 col-md-offset-2' >
+
+								<div class='row alert-success' style="display: none;"  id="success">
+									<p>Form successfully sent</p>
+								</div>
+
+								<div class="form-group text-center">
+									<img src="./img/spinner.gif" height="90" width="90" id="loader" style="display: none;"/>
+								</div>
 								
-								<form id='contact-form' class='contact-form' action='./mail.php' method='post' data-toggle='validator' >
+								<form id='contact-form' class='contact-form'   data-toggle='validator' >
 									
 									<div id='contact-form-result' ></div>
 									
@@ -1667,7 +1670,7 @@
 										<div class='col-md-6' >
 											
 											<div class='form-group' >
-												<input type='text'  name = "name" class='form-control' placeholder='Name' required>
+												<input type='text' id = "name" name = "name" class='form-control' placeholder='Name' required>
 												
 												<div class='help-block with-errors' ></div>
 											</div>
@@ -1676,7 +1679,7 @@
 										
 										<div class='col-md-6' >
 											<div class='form-group' >
-												<input type='email'  name = "email" class='form-control' placeholder='Email' required>
+												<input type='email' id = "email" name = "email" class='form-control' placeholder='Email' required>
 												
 												<div class='help-block with-errors' ></div>
 							
@@ -1685,18 +1688,16 @@
 										
 									</div>
 									
-									<div class='row' >
-										
-										
-									</div>
+									
 									
 									<div class='form-group' >
-										<textarea name = "message" rows='5' class='form-control' placeholder='Message' required></textarea>
+										<textarea name = "message" rows='5' id = "message" class='form-control' placeholder='Message' required></textarea>
 										<div class='help-block with-errors' ></div>
 									</div>
 									
 									<div class='form-group text-center' >
-										<button type='submit' class='symp-btn' >Send Message</button>
+										<button type='submit' class='symp-btn'  id = "submitForm">Send Message</button>
+										
 									</div>
 									
 									
@@ -1773,6 +1774,7 @@
 		===============================================================================-->
 		<script src='js/jquery.min.js' ></script>
 		<script src='js/jquery.stellar.min.js' ></script>
+		<script src='js/mail.js' ></script>
 		<script src='js/modernizr.js' ></script>
 		<script src='js/owl.carousel.min.js' ></script>
 		<script src='js/jquery.shuffle.min.js' ></script>
